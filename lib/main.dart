@@ -75,7 +75,7 @@ class MySliverAppBar extends SliverPersistentHeaderDelegate {
             child: ClipOval(
               child: Image(
                 width: MediaQuery.of(context).size.width / 2,
-                image: AssetImage('assets/images/babymetal-1.png'),
+                image: AssetImage('assets/images/2.jpg'),
               ),
             ),
           ),
