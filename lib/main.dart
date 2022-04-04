@@ -51,7 +51,7 @@ class MySliverAppBar extends SliverPersistentHeaderDelegate {
       overflow: Overflow.visible,
       children: [
         Image(
-          image: AssetImage('assets/images/Babymetal-Metal-Galaxy.jpg'),
+          image: AssetImage('assets/images/1.jpg'),
           fit: BoxFit.cover,
         ),
         Center(
