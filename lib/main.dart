@@ -42,7 +42,7 @@ class ContohDynamicAppBar extends StatelessWidget {
 class MySliverAppBar extends SliverPersistentHeaderDelegate {
   final double expandedHeight;
 
-  MySliverAppBar({@required this.expandedHeight});
+  MySliverAppBar({@required this.expandedHeight = 0});
 
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
