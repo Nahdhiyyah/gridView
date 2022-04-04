@@ -1,6 +1,6 @@
-import 'dart:ui';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,27 +9,37 @@ void main() {
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      home: BelajarAppBar(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class BelajarAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Belajar Flutter'),
-      ),
-      body: Container(
-          margin: EdgeInsets.all(20),
-          height: 200,
-          width: 200,
-          alignment: Alignment.topLeft,
-          color: Colors.red,
-          child: Text(
-            'Tahapan awal',
-            style: TextStyle(fontSize: 20, color: Colors.white),
-          )),
-    );
+        body: NestedScrollView(
+            headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+              return <Widget>[
+                SliverAppBar(
+                    expandedHeight: 200.0,
+                    floating: false,
+                    pinned: true,
+                    flexibleSpace: FlexibleSpaceBar(
+                        centerTitle: true,
+                        title: Text("Belajar Sliver App Bar",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20.0,
+                            )),
+                        background: Image(
+                          image: AssetImage('assets/images/1.jpg'),
+                          fit: BoxFit.cover,
+                        )))
+              ];
+            },
+            body: Center(
+              child: Text("Gambar Kiyowo"),
+            )));
   }
 }
