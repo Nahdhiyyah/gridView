@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 void main() {
   runApp(MyApp());
@@ -53,23 +54,21 @@ class cobaListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    appBar: AppBar(
+        appBar: AppBar(
       leading: Icon(Icons.home),
       title: Text('Belajar appbar'),
-      flexibleSpace:Container(
+      flexibleSpace: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            color: <Color>[
-              Colors.green,
-              Colors.blue.
-            ])
-        ),
+            gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: <Color>[
+            Colors.green,
+            Colors.blue
+          ],
+          //tileMode: TileMode.repeated;
+        )),
       ),
-
-    )
-  )
-
+    ));
   }
 }
