@@ -53,28 +53,23 @@ class cobaListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text("My Galery", style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold)),
-        ),
-        backgroundColor: Colors.red[200],
-      ),
-      body: GridView.count(
-        crossAxisCount: 3,
-        children: List.generate(
-          17,
-          (index) {
-            return Card(
-              child: Image.asset(
-                gambar[index],
-                width: 150,
-                height: 150,
-                fit: BoxFit.cover,
-              ),
-            );
-          },
+    appBar: AppBar(
+      leading: Icon(Icons.home),
+      title: Text('Belajar appbar'),
+      flexibleSpace:Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            color: <Color>[
+              Colors.green,
+              Colors.blue.
+            ])
         ),
       ),
-    );
+
+    )
+  )
+
   }
 }
