@@ -17,7 +17,7 @@ class BelajarNavigationDrawer extends StatelessWidget {
         title: Text("Belajar Drawer Nav"),
       ),
       drawer: DrawerWidget(),
-      endDrawer: DrawerWidget(),
+      //endDrawer: DrawerWidget(),
       body: Center(child: Text('Belajar Navigation Drawer di Flutter', style: TextStyle(fontSize: 20))),
     );
   }

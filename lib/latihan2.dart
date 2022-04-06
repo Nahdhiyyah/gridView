@@ -1,47 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import 'music.dart';
-
 class DrawerWidget extends StatelessWidget {
-  final List<String> dataTeks = [
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3"
-  ];
-
-  final List<String> artis = [
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3",
-    "Berisik.mp3",
-    "Hati-hati Di Jalan.mp3"
-  ];
-
-  final List<String> gambar = [
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-    "assets/images/1.jpg",
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -49,122 +8,10 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           _drawerHeader(),
-          _drawerItem(
-              icon: Icons.audiotrack,
-              text: 'My Music',
-              onTap: () => DefaultTabController(
-                  length: 10,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      bottom: TabBar(tabs: [
-                        Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
-                      ]),
-                    ),
-                    body: TabBarView(
-                      children: <Widget>[
-                        Scaffold(
-                          body: ListView.builder(
-                              itemCount: dataTeks.length,
-                              itemBuilder: (context, index) {
-                                return Card(
-                                  child: ListTile(
-                                    leading: Icon(Icons.play_arrow, color: Colors.black),
-                                    title: Text(dataTeks[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-                                    subtitle: Text(artis[index]),
-                                  ),
-                                );
-                              }),
-                        )
-                      ],
-                    ),
-                  ))),
-          _drawerItem(
-              icon: Icons.group,
-              text: 'Shared with me',
-              onTap: () => DefaultTabController(
-                  length: 10,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      bottom: TabBar(tabs: [
-                        Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
-                      ]),
-                    ),
-                    body: TabBarView(
-                      children: <Widget>[
-                        Scaffold(
-                          body: ListView.builder(
-                              itemCount: dataTeks.length,
-                              itemBuilder: (context, index) {
-                                return Card(
-                                  child: ListTile(
-                                    leading: Icon(Icons.play_arrow, color: Colors.black),
-                                    title: Text(dataTeks[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-                                    subtitle: Text(artis[index]),
-                                  ),
-                                );
-                              }),
-                        )
-                      ],
-                    ),
-                  ))),
-          _drawerItem(
-              icon: Icons.access_time,
-              text: 'Recent',
-              onTap: () => DefaultTabController(
-                  length: 10,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      bottom: TabBar(tabs: [
-                        Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
-                      ]),
-                    ),
-                    body: TabBarView(
-                      children: <Widget>[
-                        Scaffold(
-                          body: ListView.builder(
-                              itemCount: dataTeks.length,
-                              itemBuilder: (context, index) {
-                                return Card(
-                                  child: ListTile(
-                                    leading: Icon(Icons.play_arrow, color: Colors.black),
-                                    title: Text(dataTeks[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-                                    subtitle: Text(artis[index]),
-                                  ),
-                                );
-                              }),
-                        )
-                      ],
-                    ),
-                  ))),
-          _drawerItem(
-              icon: Icons.delete,
-              text: 'Trash',
-              onTap: () => DefaultTabController(
-                  length: 10,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      bottom: TabBar(tabs: [
-                        Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
-                      ]),
-                    ),
-                    body: TabBarView(
-                      children: <Widget>[
-                        Scaffold(
-                          body: ListView.builder(
-                              itemCount: dataTeks.length,
-                              itemBuilder: (context, index) {
-                                return Card(
-                                  child: ListTile(
-                                    leading: Icon(Icons.play_arrow, color: Colors.black),
-                                    title: Text(dataTeks[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-                                    subtitle: Text(artis[index]),
-                                  ),
-                                );
-                              }),
-                        )
-                      ],
-                    ),
-                  ))),
+          _drawerItem(icon: Icons.folder, text: 'My Files', onTap: () => print('Tap My Files')),
+          _drawerItem(icon: Icons.group, text: 'Shared with me', onTap: () => print('Tap Shared menu')),
+          _drawerItem(icon: Icons.access_time, text: 'Recent', onTap: () => print('Tap Recent menu')),
+          _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print('Tap Trash menu')),
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
