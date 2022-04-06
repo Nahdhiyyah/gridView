@@ -89,7 +89,11 @@ class music extends StatelessWidget {
     "assets/images/thousand year.jpg",
     "assets/images/hati-hati di jalan.jpg",
     "assets/images/happy.jpg",
-    "assets/images/attention.jpg"
+    "assets/images/attention.jpg",
+    "assets/images/we dont.jpg",
+    "assets/images/swy.jpg",
+    "assets/images/zoo.jpg",
+    "assets/images/starlight.jpg"
   ];
   final List<String> judul = [
     "Berisik.mp3",
@@ -97,7 +101,11 @@ class music extends StatelessWidget {
     "A Thousand Years.mp3",
     "Hati-hati Di Jalan.mp3",
     "Happy.mp3",
-    "Attention.mp3"
+    "Attention.mp3",
+    "We Don't Talk Anymore.mp3",
+    "Still With You.mp3",
+    "Zoo.mp3",
+    "Starlight.mp3"
   ];
 
   final List<String> artis = [
@@ -106,7 +114,11 @@ class music extends StatelessWidget {
     "Inna",
     "Tulus",
     "Skinnyfabs",
-    "Charlie Puth"
+    "Charlie Puth",
+    "Charlie Puth",
+    "Jungkook-BTS",
+    "NCT",
+    "Chani-SF9"
   ];
 
   @override
