@@ -21,7 +21,7 @@ class BelajarNavigationDrawer extends StatelessWidget {
                 tabs: [
                   new Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
                   new Tab(icon: Icon(Icons.movie), text: "My Movie"),
-                  new Tab(icon: Icon(Icons.favorite), text: "Favorite")
+                  new Tab(icon: Icon(Icons.favorite), text: "My Favorite")
                 ],
               ),
             ),

@@ -82,12 +82,12 @@ Widget _drawerItem({required IconData icon, required String text, required Gestu
 
 class music extends StatelessWidget {
   final List<String> lagu = [
-    "Berisik",
-    "Without You",
-    "Up",
-    "Hati-hati Di jalan",
-    "Happy",
-    "Attention"
+    "Berisik.mp3",
+    "Without You.mp3",
+    "Up.mp3",
+    "Hati-hati Di jalan.mp3",
+    "Happy.mp3",
+    "Attention.mp3"
   ];
   final List<String> artis = [
     "Dere",
@@ -122,20 +122,20 @@ class music extends StatelessWidget {
 
 class movie extends StatelessWidget {
   final List<String> foto = [
-    "assets/images/1.jpg",
-    "assets/images/2.jpg",
-    "assets/images/3.jpg",
-    "assets/images/4.jpg",
-    "assets/images/5.jpg",
-    "assets/images/6.jpg"
+    "assets/images/berisik.jpg",
+    "assets/images/without you.jpg",
+    "assets/images/thousand year.jpg",
+    "assets/images/hati-hati di jalan.jpg",
+    "assets/images/happy.jpg",
+    "assets/images/attention.jpg"
   ];
   final List<String> judul = [
-    "Berisik",
-    "Without You",
-    "Up",
-    "Hati-hati Di Jalan",
-    "Happy",
-    "Attention"
+    "Berisik.mp4",
+    "Without You.mp4",
+    "A Thousand Years.mp4",
+    "Hati-hati Di Jalan.mp4",
+    "Happy.mp4",
+    "Attention.mp4"
   ];
 
   final List<String> artis = [
