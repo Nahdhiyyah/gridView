@@ -10,7 +10,7 @@ class DrawerWidget extends StatelessWidget {
           _drawerHeader(),
           _drawerItem(icon: Icons.audiotrack, text: 'My Music', onTap: () => music()),
           _drawerItem(icon: Icons.movie, text: 'My Movie', onTap: () => movie()),
-          _drawerItem(icon: Icons.favorite, text: 'Trash', onTap: () => favorit()),
+          _drawerItem(icon: Icons.favorite, text: 'My Favorite', onTap: () => favorit()),
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
@@ -20,7 +20,7 @@ class DrawerWidget extends StatelessWidget {
                   color: Colors.black54,
                 )),
           ),
-          _drawerItem(icon: Icons.delete, text: 'My Favorite', onTap: () => print('Tap Family menu')),
+          _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print('Tap Family menu')),
         ],
       ),
     );
