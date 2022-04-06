@@ -31,14 +31,14 @@ class DrawerWidget extends StatelessWidget {
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
     currentAccountPicture: ClipOval(
-      child: Image(image: AssetImage('assets/images/3.jpeg'), fit: BoxFit.cover),
+      child: Image(image: AssetImage('assets/images/3.jpg'), fit: BoxFit.cover),
     ),
     otherAccountsPictures: [
       ClipOval(
         child: Image(image: AssetImage('assets/images/4.jpg'), fit: BoxFit.cover),
       ),
       ClipOval(
-        child: Image(image: AssetImage('assets/images/5.jpeg'), fit: BoxFit.cover),
+        child: Image(image: AssetImage('assets/images/5.jpg'), fit: BoxFit.cover),
       )
     ],
     accountName: Text('Belajar Flutter'),
