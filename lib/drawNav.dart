@@ -54,7 +54,7 @@ Widget _drawerHeader() {
     ),
     otherAccountsPictures: [
       ClipOval(
-        child: Image(image: AssetImage('assets/images/4.jpg'), fit: BoxFit.cover),
+        child: Image(image: AssetImage('assets/images/5.jpg'), fit: BoxFit.cover),
       ),
     ],
     accountName: Text('Nad'),
