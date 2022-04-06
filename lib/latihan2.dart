@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'music.dart';
+
 class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,7 +10,23 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           _drawerHeader(),
-          _drawerItem(icon: Icons.folder, text: 'My Files', onTap: () => print('Tap My Files')),
+          _drawerItem(
+              icon: Icons.folder,
+              text: 'My Files',
+              onTap: () => DefaultTabController(
+                  length: 10,
+                  child: Scaffold(
+                    appBar: AppBar(
+                      bottom: TabBar(tabs: [
+                        Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
+                      ]),
+                    ),
+                    body: TabBarView(
+                      children: <Widget>[
+                        new music()
+                      ],
+                    ),
+                  ))),
           _drawerItem(icon: Icons.group, text: 'Shared with me', onTap: () => print('Tap Shared menu')),
           _drawerItem(icon: Icons.access_time, text: 'Recent', onTap: () => print('Tap Recent menu')),
           _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print('Tap Trash menu')),
