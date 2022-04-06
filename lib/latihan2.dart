@@ -36,9 +36,6 @@ Widget _drawerHeader() {
       ClipOval(
         child: Image(image: AssetImage('assets/images/4.jpg'), fit: BoxFit.cover),
       ),
-      ClipOval(
-        child: Image(image: AssetImage('assets/images/5.jpg'), fit: BoxFit.cover),
-      )
     ],
     accountName: Text('Nad'),
     accountEmail: Text('nahdhiyyah13@gmail.com'),
