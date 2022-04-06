@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'latihan2.dart';
+import 'drawNav.dart';
 
 void main() {
   runApp(MaterialApp(
