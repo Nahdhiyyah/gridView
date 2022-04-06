@@ -17,6 +17,7 @@ class BelajarNavigationDrawer extends StatelessWidget {
         child: Scaffold(
             appBar: AppBar(
               title: Text("Nadia's List"),
+              backgroundColor: Colors.black,
               bottom: TabBar(
                 tabs: [
                   new Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
