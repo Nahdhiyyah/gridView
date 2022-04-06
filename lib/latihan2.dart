@@ -33,7 +33,7 @@ class DrawerWidget extends StatelessWidget {
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
-            child: Text("Labels",
+            child: Text("Others",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black54,
