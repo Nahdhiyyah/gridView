@@ -162,7 +162,7 @@ class movie extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(
-          judul.length,
+          foto.length,
           (index) {
             return Card(
               child: Image.asset(
