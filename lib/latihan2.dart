@@ -39,7 +39,7 @@ class DrawerWidget extends StatelessWidget {
                   color: Colors.black54,
                 )),
           ),
-          _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print('Tap Family menu')),
+          _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print("Dokumen telah terhapus karena sudah melebihi batas maksimal pemindahan")),
         ],
       ),
     );
@@ -180,24 +180,6 @@ class movie extends StatelessWidget {
 }
 
 class favorit extends StatelessWidget {
-  final List<String> gambar = [
-    "assets/images/4.jpg",
-    "assets/images/5.jpg",
-    "assets/images/6.jpg"
-  ];
-
-  final List<String> judul = [
-    "Hati-hati Di Jalan",
-    "Happy",
-    "Attention"
-  ];
-
-  final List<String> artis = [
-    "Tulus",
-    "Skinnyfabs",
-    "Charlie Puth"
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -205,28 +187,28 @@ class favorit extends StatelessWidget {
             child: ListView(
       children: [
         ListTile(
-          leading: Icon(Icons.play_arrow),
-          title: Text('Berisik', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('Berisik', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
-          leading: Icon(Icons.play_arrow),
-          title: Text('Without You', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('Without You', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
-          leading: Icon(Icons.movie),
-          title: Text('Up', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('Bed Jenius.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
-          leading: Icon(Icons.movie),
-          title: Text('Hati-hati Di Jalan', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('True Beauty.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
-          leading: Icon(Icons.play_arrow),
-          title: Text('Happy', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('Happy', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
-          leading: Icon(Icons.movie),
-          title: Text('Attention', style: TextStyle(fontSize: 17)),
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('Extraordinary You.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
       ],
     )));
