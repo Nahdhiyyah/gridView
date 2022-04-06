@@ -16,10 +16,10 @@ class BelajarNavigationDrawer extends StatelessWidget {
         length: 3,
         child: Scaffold(
             appBar: AppBar(
-              title: Text("Nadia's List"),
+              title: Text("Nadia's List"
               backgroundColor: Colors.black,
               bottom: TabBar(
-                labelColor: Colors.pink[100],
+                labelColor: Colors.white,
                 unselectedLabelColor: Colors.grey,
                 tabs: [
                   new Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
