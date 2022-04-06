@@ -19,7 +19,7 @@ class BelajarNavigationDrawer extends StatelessWidget {
               title: Text("Nadia's List"),
               backgroundColor: Colors.black,
               bottom: TabBar(
-                labelColor: Colors.pink[50],
+                labelColor: Colors.pink[100],
                 unselectedLabelColor: Colors.grey,
                 tabs: [
                   new Tab(icon: Icon(Icons.audiotrack), text: "My Music"),
