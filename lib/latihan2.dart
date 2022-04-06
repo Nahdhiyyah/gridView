@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -47,6 +48,7 @@ class DrawerWidget extends StatelessWidget {
 
 Widget _drawerHeader() {
   return UserAccountsDrawerHeader(
+    decoration: BoxDecoration(color: Colors.black),
     currentAccountPicture: ClipOval(
       child: Image(image: AssetImage('assets/images/1.jpg'), fit: BoxFit.cover),
     ),
