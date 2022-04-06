@@ -83,14 +83,23 @@ Widget _drawerItem({required IconData icon, required String text, required Gestu
 }
 
 class music extends StatelessWidget {
-  final List<String> lagu = [
+  final List<String> foto = [
+    "assets/images/berisik.jpg",
+    "assets/images/without you.jpg",
+    "assets/images/thousand year.jpg",
+    "assets/images/hati-hati di jalan.jpg",
+    "assets/images/happy.jpg",
+    "assets/images/attention.jpg"
+  ];
+  final List<String> judul = [
     "Berisik.mp3",
     "Without You.mp3",
-    "Up.mp3",
-    "Hati-hati Di jalan.mp3",
+    "A Thousand Years.mp3",
+    "Hati-hati Di Jalan.mp3",
     "Happy.mp3",
     "Attention.mp3"
   ];
+
   final List<String> artis = [
     "Dere",
     "Avicii",
@@ -104,17 +113,17 @@ class music extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-        itemCount: lagu.length,
+        itemCount: foto.length,
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              leading: Icon(
-                Icons.play_arrow,
-                color: Colors.black,
-              ),
-              title: Text(lagu[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-              subtitle: Text(artis[index]),
-            ),
+                leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
+                title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
+                subtitle: Text(artis[index]),
+                trailing: Icon(
+                  Icons.play_arrow,
+                  color: Colors.black,
+                )),
           );
         },
       ),
