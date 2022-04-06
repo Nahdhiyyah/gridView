@@ -145,20 +145,28 @@ class music extends StatelessWidget {
 
 class movie extends StatelessWidget {
   final List<String> foto = [
-    "assets/images/berisik.jpg",
-    "assets/images/without you.jpg",
-    "assets/images/thousand year.jpg",
-    "assets/images/hati-hati di jalan.jpg",
-    "assets/images/happy.jpg",
-    "assets/images/attention.jpg"
+    "assets/images/Extraordinary You.jpg",
+    "assets/images/bad jenius.jpg",
+    "assets/images/davinci.jpg",
+    "assets/images/dunkirk.jpg",
+    "assets/images/insidious.jpg",
+    "assets/images/mr queen.jpeg",
+    "assets/images/terlalu tampan.jpg",
+    "assets/images/the tale of nokdu.jpg",
+    "assets/images/train.jpg",
+    "assets/images/true beauty.jpg"
   ];
   final List<String> judul = [
-    "Berisik.mp4",
-    "Without You.mp4",
-    "A Thousand Years.mp4",
-    "Hati-hati Di Jalan.mp4",
-    "Happy.mp4",
-    "Attention.mp4"
+    "Extraordinary You.mp4",
+    "Bad Jenius.mp4",
+    "Davinci.mp4",
+    "Dunkirk.mp4",
+    "Insidious.mp4",
+    "Mr Queen.mp4",
+    "Terlalu Tampan.mp4",
+    "The Tale of Nokdu.mp4",
+    "Train to Busan.mp4",
+    "True Beauty.mp4"
   ];
 
   @override
