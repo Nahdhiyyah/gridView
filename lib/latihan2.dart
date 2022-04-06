@@ -8,9 +8,27 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           _drawerHeader(),
-          _drawerItem(icon: Icons.audiotrack, text: 'My Music', onTap: () => music()),
-          _drawerItem(icon: Icons.movie, text: 'My Movie', onTap: () => movie()),
-          _drawerItem(icon: Icons.favorite, text: 'My Favorite', onTap: () => favorit()),
+          _drawerItem(
+              icon: Icons.audiotrack,
+              text: 'My Music',
+              onTap: () {
+                DefaultTabController.of(context)?.animateTo(0);
+                Navigator.pop(context);
+              }),
+          _drawerItem(
+              icon: Icons.movie,
+              text: 'My Movie',
+              onTap: () {
+                DefaultTabController.of(context)?.animateTo(1);
+                Navigator.pop(context);
+              }),
+          _drawerItem(
+              icon: Icons.favorite,
+              text: 'My Favorite',
+              onTap: () {
+                DefaultTabController.of(context)?.animateTo(2);
+                Navigator.pop(context);
+              }),
           Divider(height: 25, thickness: 1),
           Padding(
             padding: const EdgeInsets.only(left: 20.0, top: 10, bottom: 10),
