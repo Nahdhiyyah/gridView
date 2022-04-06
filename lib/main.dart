@@ -5,6 +5,7 @@ void main() {
   runApp(MaterialApp(
     title: "BelajarFlutter.com",
     home: BelajarNavigationDrawer(),
+    debugShowCheckedModeBanner: false,
   ));
 }
 
