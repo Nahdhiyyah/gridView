@@ -188,11 +188,11 @@ class favorit extends StatelessWidget {
       children: [
         ListTile(
           leading: Icon(Icons.play_arrow, color: Colors.black),
-          title: Text('Berisik', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+          title: Text('Berisik.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
           leading: Icon(Icons.play_arrow, color: Colors.black),
-          title: Text('Without You', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+          title: Text('Without You.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
           leading: Icon(Icons.movie, color: Colors.black),
@@ -204,11 +204,35 @@ class favorit extends StatelessWidget {
         ),
         ListTile(
           leading: Icon(Icons.play_arrow, color: Colors.black),
-          title: Text('Happy', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+          title: Text('Happy.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
         ListTile(
           leading: Icon(Icons.movie, color: Colors.black),
           title: Text('Extraordinary You.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('Hati-hati di Jalan.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('A Thousand Years.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('Terlalu Tampan.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('Train to Busan', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.play_arrow, color: Colors.black),
+          title: Text('Attention.mp3', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+        ),
+        ListTile(
+          leading: Icon(Icons.movie, color: Colors.black),
+          title: Text('Insidious.mp4', style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
         ),
       ],
     )));
