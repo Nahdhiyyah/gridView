@@ -130,7 +130,7 @@ class music extends StatelessWidget {
           return Card(
             child: ListTile(
                 leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
-                title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
+                title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16)),
                 subtitle: Text(artis[index]),
                 trailing: Icon(
                   Icons.play_arrow,
