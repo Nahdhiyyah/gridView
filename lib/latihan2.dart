@@ -157,10 +157,13 @@ class movie extends StatelessWidget {
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
-              title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-              subtitle: Text(artis[index]),
-            ),
+                leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
+                title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
+                subtitle: Text(artis[index]),
+                trailing: Icon(
+                  Icons.play_arrow,
+                  color: Colors.black,
+                )),
           );
         },
       ),
