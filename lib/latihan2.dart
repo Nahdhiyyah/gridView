@@ -161,32 +161,24 @@ class movie extends StatelessWidget {
     "Attention.mp4"
   ];
 
-  final List<String> artis = [
-    "Dere",
-    "Avicii",
-    "Inna",
-    "Tulus",
-    "Skinnyfabs",
-    "Charlie Puth"
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemCount: foto.length,
-        itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-                leading: Image.asset(foto[index], width: 50, height: 50, fit: BoxFit.cover),
-                title: Text(judul[index], style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 17)),
-                subtitle: Text(artis[index]),
-                trailing: Icon(
-                  Icons.play_arrow,
-                  color: Colors.black,
-                )),
-          );
-        },
+      body: GridView.count(
+        crossAxisCount: 2,
+        children: List.generate(
+          17,
+          (index) {
+            return Card(
+              child: Image.asset(
+                foto[index],
+                width: 150,
+                height: 150,
+                fit: BoxFit.cover,
+              ),
+            );
+          },
+        ),
       ),
     );
   }
