@@ -8,9 +8,8 @@ class DrawerWidget extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: <Widget>[
           _drawerHeader(),
-          _drawerItem(icon: Icons.folder, text: 'My Files', onTap: () => print('Tap My Files')),
-          _drawerItem(icon: Icons.group, text: 'Shared with me', onTap: () => print('Tap Shared menu')),
-          _drawerItem(icon: Icons.access_time, text: 'Recent', onTap: () => print('Tap Recent menu')),
+          _drawerItem(icon: Icons.audiotrack, text: 'My Music', onTap: () => print('Tap My Files')),
+          _drawerItem(icon: Icons.movie, text: 'My Movie', onTap: () => print('Tap Shared menu')),
           _drawerItem(icon: Icons.delete, text: 'Trash', onTap: () => print('Tap Trash menu')),
           Divider(height: 25, thickness: 1),
           Padding(
@@ -21,7 +20,7 @@ class DrawerWidget extends StatelessWidget {
                   color: Colors.black54,
                 )),
           ),
-          _drawerItem(icon: Icons.bookmark, text: 'Family', onTap: () => print('Tap Family menu')),
+          _drawerItem(icon: Icons.favorite, text: 'My Favorite', onTap: () => print('Tap Family menu')),
         ],
       ),
     );
